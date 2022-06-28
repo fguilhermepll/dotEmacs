@@ -1,5 +1,8 @@
 (load-file "~/.emacs.d/controls.el")
 
+;; Binding for init.el
+;;(global-set-key [f7] (lambda () (interactive) (find-file user-init-file)))
+
 (load-theme 'exotica t)
 (set-frame-font "Fira Code 11" nil t)
 
