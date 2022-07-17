@@ -39,5 +39,3 @@
   (load-theme 'monokai-pro-octagon t)
   )
 
-(use-package 
-  :ensure t)
