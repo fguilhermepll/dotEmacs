@@ -1,3 +1,5 @@
+(global-set-key [f7] (lambda () (interactive) (find-file user-init-file)))
+
 ;;Selection move up down
 (defun move-text-internal (arg)
    (cond
@@ -34,3 +36,10 @@
 
 (global-set-key (kbd "M-<up>") 'move-text-up)
 (global-set-key (kbd "M-<down>")  'move-text-down)
+
+;; scroll one line at a time (less "jumpy" than defaults)
+(setq redisplay-dont-pause t
+  scroll-margin 1
+  scroll-step 1
+  scroll-conservatively 10000
+  scroll-preserve-screen-position 1)
